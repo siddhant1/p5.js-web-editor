@@ -4,11 +4,11 @@ import ReactDOM from 'react-dom';
 // import escapeStringRegexp from 'escape-string-regexp';
 import { isEqual } from 'lodash';
 import srcDoc from 'srcdoc-polyfill';
-import loopProtect from 'loop-protect';
 import { JSHINT } from 'jshint';
 import decomment from 'decomment';
 import classNames from 'classnames';
 import { Decode } from 'console-feed';
+import { transform } from '../../../utils/previewEntry';
 import { getBlobUrl } from '../actions/files';
 import { resolvePathToFile } from '../../../../server/utils/filePath';
 import {
@@ -138,7 +138,7 @@ class PreviewFrame extends React.Component {
         ignore: /\/\/\s*noprotect/g,
         space: true
       });
-      newContent = loopProtect(newContent);
+      // newContent = transform(newContent);
     }
     return newContent;
   }

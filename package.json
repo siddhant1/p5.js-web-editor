@@ -77,6 +77,7 @@
     "npm": "6.4.1"
   },
   "dependencies": {
+    "@babel/standalone": "^7.3.4",
     "archiver": "^1.1.0",
     "async": "^2.6.1",
     "axios": "^0.12.0",
@@ -111,7 +112,7 @@
     "jsdom": "^9.8.3",
     "jshint": "^2.10.1",
     "lodash": "^4.17.11",
-    "loop-protect": "github:catarak/loop-protect",
+    "loop-protect": "github:jsbin/loop-protect",
     "mjml": "^3.3.2",
     "mongoose": "^4.6.8",
     "node-uuid": "^1.4.7",
