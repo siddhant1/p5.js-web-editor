@@ -80,7 +80,7 @@ class Editor extends React.Component {
       lineNumbers: true,
       styleActiveLine: true,
       inputStyle: 'contenteditable',
-      lineWrapping: false,
+      lineWrapping: true,
       fixedGutter: false,
       foldGutter: true,
       foldOptions: { widget: '\u2026' },
